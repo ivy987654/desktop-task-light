@@ -1,0 +1,12 @@
+config.json
+state/
+run/
+logs/
+__pycache__/
+*.pyc
+.env*
+*.pem
+*.key
+*.zip
+preview.html
+VERIFICATION.md

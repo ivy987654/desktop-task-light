@@ -1,0 +1,124 @@
+{
+  "colors": {
+    "base": [
+      0,
+      0
+    ],
+    "thinking": [
+      43,
+      255
+    ],
+    "thinking_mid": [
+      43,
+      175
+    ],
+    "thinking_tail": [
+      43,
+      130
+    ],
+    "thinking_bg": [
+      43,
+      85
+    ],
+    "thinking_stripe": [
+      43,
+      110
+    ],
+    "done": [
+      85,
+      255
+    ],
+    "failed": [
+      0,
+      255
+    ],
+    "schedule": [
+      170,
+      255
+    ],
+    "waiting": [
+      191,
+      255
+    ],
+    "proxy_brief": [
+      21,
+      255
+    ],
+    "proxy_down": [
+      0,
+      255
+    ],
+    "proxy_recovered": [
+      85,
+      255
+    ]
+  },
+  "timing": {
+    "done_seconds": 5.0,
+    "failed_seconds": 5.0,
+    "orphan_seconds": 5.0,
+    "chase_step": 0.2,
+    "progress_tau_seconds": 120,
+    "flash_period": 0.5,
+    "breath_period": 2.4,
+    "stale_minutes": 45,
+    "health_check_seconds": 10,
+    "full_refresh_minutes": 10,
+    "foreign_yield_seconds": 60,
+    "wait_expire_hours": 12
+  },
+  "layout": {
+    "mode": "columns",
+    "top_row": 0,
+    "space_key": [
+      5,
+      6
+    ],
+    "proxy_key": [
+      2,
+      10
+    ],
+    "schedule_max_keys": 8
+  },
+  "tasks": {
+    "show_subagents": true,
+    "thinking_style": "progress",
+    "region_stripes": true,
+    "question_tools": [
+      "request_user_input"
+    ]
+  },
+  "breathing": {
+    "mode": "auto",
+    "speed": 110
+  },
+  "proxy": {
+    "enabled": false,
+    "targets": [
+      "https://chatgpt.com/cdn-cgi/trace",
+      "https://api.openai.com/v1/models"
+    ],
+    "proxy_url": "",
+    "interval_ok": 20,
+    "interval_fail": 5,
+    "timeout": 6,
+    "persistent_after": 60,
+    "recovered_seconds": 20
+  },
+  "codex": {
+    "watch_rollouts": true,
+    "rollout_window_hours": 6,
+    "process_check": true,
+    "ignore_ephemeral": true,
+    "ignore_cwd_prefixes": [
+      "~/.codex"
+    ]
+  },
+  "device": {
+    "pids": [
+      2896,
+      2897,
+      2898
+    ]
+  }
+}
